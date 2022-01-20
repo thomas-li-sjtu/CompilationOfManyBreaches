@@ -1,0 +1,21 @@
+[-] Starting a search on top 2 sites from the Maigret database...
+[!] You can run search by full list of sites with flag `-a`
+[*] Checking username nicollekaqui on:
+Traceback (most recent call last):
+  File "/home/tedd/TOOLS/maigret/./maigret.py", line 18, in <module>
+    run()
+  File "/home/tedd/TOOLS/maigret/./maigret.py", line 11, in run
+    loop.run_until_complete(main())
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/home/tedd/TOOLS/maigret/maigret/maigret.py", line 627, in main
+    results = await maigret(
+  File "/home/tedd/TOOLS/maigret/maigret/checking.py", line 631, in maigret
+    clearweb_checker = SimpleAiohttpChecker(
+  File "/home/tedd/TOOLS/maigret/maigret/checking.py", line 64, in __init__
+    from aiohttp_socks import ProxyConnector
+  File "/usr/local/lib/python3.9/dist-packages/aiohttp_socks/__init__.py", line 5, in <module>
+    from .connector import (
+  File "/usr/local/lib/python3.9/dist-packages/aiohttp_socks/connector.py", line 8, in <module>
+    from aiohttp.helpers import CeilTimeout  # noqa
+ImportError: cannot import name 'CeilTimeout' from 'aiohttp.helpers' (/usr/lib/python3/dist-packages/aiohttp/helpers.py)
